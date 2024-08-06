@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Shoppingcard page</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="./pics/logo-passcard.png" alt="">
+            </div>
+            <ul>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">PASSCARD</a></li>
+                <li><a href="#">PROFILE</a></li>
+            </ul>
+            <ul class="login">
+                <li><img src="./pics/search.svg" alt="search"></li>
+                <li class="cart">
+                    <img src="./pics/cart-shopping.svg" alt="cart">
+                    <p>1</p>
+                </li>
+                <li><a href="#">LOGIN</a></li>
+                <li><a href="#">SING UP</a></li>
+            </ul>
+        </div>
+    </header>
+    <section class="mycart">
+        <h1>My Cart</h1>
+        <div class="container">
+            <div class="main">
+                <div class="left">
+                    <div class="top">
+                        <img src="./pics/bin.svg" alt="delete">
+                        <div class="cover">
+                            <img src="./pics/doc-blue.svg" alt="doc">
+                            <p><span>Google Docs</span></p>
+                            <p>Used for business</p>
+                        </div>
+                        <div class="level">
+                            <p><span>Google Docs</span></p>
+                            <div class="levelcontainer">
+                                <div class="levelbar">
+                                    <img src="./pics/circle-green.svg" alt="lv1"> 
+                                    <img src="./pics/circle-light.svg" alt="lv2">
+                                    <img src="./pics/circle-light.svg" alt="lv3">
+                                </div>
+                                <div class="levelselect">
+                                    <select name="levelskill">
+                                        <option value="lv1">LV 1-3</option>
+                                        <option value="lv2">LV 2-3</option>
+                                        <option value="lv3">LV 3-3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cost">
+                                <p>THB 150</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img src="./pics/bin.svg" alt="delete">
+                        <div class="cover">
+                            <img src="./pics/doc-org.svg" alt="doc">
+                            <p><span>Google Slides</span></p>
+                            <p>Used for business</p>
+                        </div>
+                        <div class="level">
+                            <p><span>Google Slides</span></p>
+                            <div class="levelcontainer">
+                                <div class="levelbar">
+                                    <img src="./pics/circle-green.svg" alt="lv1"> 
+                                    <img src="./pics/circle-green.svg" alt="lv2">
+                                    <img src="./pics/circle-green.svg" alt="lv3">
+                                    <img src="./pics/circle-light.svg" alt="lv4"> 
+                                </div>
+                                <div class="levelselect">
+                                    <select name="levelskill">
+                                        <option value="lv1">LV 1/4</option>
+                                        <option value="lv2">LV 2/4</option>
+                                        <option value="lv3">LV 3/4</option>
+                                        <option value="lv4">LV 4/4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="cost">
+                                <p>THB 150</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>Order Info</h4>
+                    <div class="subtotal">
+                        <p>Subtotal</p>
+                        <p><span>THB 300</span></p>
+                    </div>
+                    <div class="promotion">
+                        <img src="./pics/coupon.svg" alt="coupon">
+                        <form action="">
+                            <input type="text" placeholder="Promotion code"/>
+                            <button type="submit">Apply</button>
+                        </form>
+                    </div>
+                    <hr>
+                    <div class="payment">
+                        <p>Total Payment</p>
+                        <p><span>THB 300</span></p>
+                    </div>
+                    <div class="checkout">
+                        <button type="button">LOG IN TO CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

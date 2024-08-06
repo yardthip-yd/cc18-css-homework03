@@ -1,0 +1,294 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+body {
+    max-width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+    background-color: whitesmoke;
+}
+ul {
+    list-style: none;
+}
+.container {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+}
+
+/* Header */
+header {
+    border-bottom: 1px solid gainsboro;
+    color: darkslategrey;
+    min-height: 60px;
+    display: flex;
+}
+header .container {
+    align-items: center;
+    justify-content: space-between;
+}
+header img {
+    height: 20px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* gap: 20px; */
+}
+header li {
+    margin-left: 20px;
+}
+header a {
+    text-decoration: none;
+    color: rgba(50,55,78,255);
+    font-weight: 600;
+}
+header a:hover {
+    color: white;
+    background-color: rgba(50,55,78,255);
+    border: 1px solid;
+    border-radius: 16px;
+    padding: 8px;
+}
+header .login {
+    align-items: center;
+}
+header .cart {
+    position: relative;
+}
+header .cart p {
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    color: white;
+    font-size: 8px;
+    text-align: center;
+    position: absolute; 
+    top: -2px;
+    right: -4px;
+}
+
+/* My Cart */
+.mycart .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mycart h1 {
+    margin: 50px 0 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 390px;
+}
+.mycart .main {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.mycart .top, .bottom {
+    border-radius: 10px;
+    box-shadow: 0 2px 2px 0 lightgray;
+}
+.mycart .left, .right {
+    flex: 1;
+}
+.mycart .right {
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    padding: 20px;
+    max-height: 250px;
+}
+.mycart .top, .bottom, .right {
+    background-color: white;
+    min-height: 100px;
+    padding: 20px;
+    gap: 5px;
+}
+.mycart .levelcontainer {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* Google Docs */
+.mycart .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.mycart .left img {
+    border: 1.5px solid rgba(0,220,183,255);
+    padding: 4px;
+    border-radius: 50%;
+    width: 25px;
+}
+.mycart .left .cover {
+    background-image: url(./pics/blue_bg.jpg);
+    padding: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 10px;
+}
+.mycart .cover img {
+    background-color: white;
+    border: white;
+    border-radius: 8px;
+    /* height: 20px;
+    width: 20px; */
+}
+.mycart .left .cover span {
+    font-weight: 800;
+}
+.mycart .left .level {
+    gap: 10px;
+    color: rgba(50,55,78,255);
+}
+.mycart .level p {
+    font-size: 14px;
+    font-weight: 900;
+}
+.mycart .cost p {
+    font-weight: none;
+    margin-top: 20px;
+    /* font-size: 12px; */
+}
+.mycart input[type="radio"] {
+    display: none;
+}
+.mycart .top .levelcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+.mycart .levelcontainer .levelbar {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.mycart .top .levelcontainer .levelbar img {
+    border: none;
+    width: 12px;
+    padding: 0;
+}
+.mycart .top .levelcontainer select {
+    border: 1px solid rgba(0,220,183,255);
+    border-radius: 2px;
+    color: rgba(160,160,160,255);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+/* Google Slides */
+.mycart .bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.mycart .bottom .cover {
+    background-image: url(./pics/orange_bg.jpg);
+}
+.mycart .bottom .levelcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+.mycart .bottom .levelcontainer .levelbar img {
+    border: none;
+    width: 12px;
+    padding: 0;
+}
+.mycart .bottom .levelcontainer select {
+    border: none;
+    color: rgba(160,160,160,255);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    font-size: 10px;
+}
+
+
+/* Order Info */
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right .subtotal, .promotion, .payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .subtotal {
+    color: gray;
+}
+.right .subtotal span {
+    /* color: rgba(0,220,183,255); */
+    color: rgba(50,55,78,255);
+}
+.right hr {
+    border: 1px solid gainsboro;
+    border-collapse: collapse;
+}
+.right .promotion input[type="text"] {
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    padding: 8px;
+    min-width: 150px;
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.right .promotion button {
+    border: 1px solid rgba(0,220,183,255);
+    background-color: white;
+    color: rgba(0,220,183,255);
+    border-radius: 10px;
+    padding: 8px 32px;
+    font-size: 10px;
+    font-weight: 800;
+}
+.right .promotion form {
+    display: flex;
+    flex-direction: row;
+}
+.right .payment span {
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgba(0,220,183,255);
+}
+.right .checkout button {
+    border: 1px solid rgba(0,220,183,255);
+    background-color: rgba(0,220,183,255);
+    color: rgba(50,55,78,255);
+    border-radius: 10px;
+    padding: 8px 32px;
+    font-size: 10px;
+    font-weight: 800;
+    width: 100%;
+    box-shadow: 4px 4px 4px rgba(211,246,236,255);
+}
